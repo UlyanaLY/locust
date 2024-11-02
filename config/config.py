@@ -20,6 +20,8 @@ class Config(BaseSettings):
     webtours_base: WebToursBaseScenarioConfig
     webtours_cancel: WebToursCancelScenarioConfig
     pacing: int = Field(5, env="PACING")
+    csv_url: str = Field("./test_data.csv", env="CSV_URL") 
+
 
 class LogConfig():
     logger = logging.getLogger('demo_logger')
