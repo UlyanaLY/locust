@@ -21,6 +21,7 @@ class Config(BaseSettings):
     webtours_cancel: WebToursCancelScenarioConfig
     pacing: int = Field(5, env="PACING")
     csv_url: str = Field("./test_data.csv", env="CSV_URL") 
+    csv_fl_url: str = Field("./test_data_flights.csv", env="CSV_FL_URL")
 
 
 class LogConfig():
